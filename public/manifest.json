@@ -1,0 +1,48 @@
+{
+  "manifest_version": 3,
+  "name": "NEBULA",
+  "version": "2.0.0",
+  "description": "Privacy-first website customization: themes, glass, wallpapers, focus mode and more. All data stays on your device.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "NEBULA"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "options_page": "dashboard.html",
+  "optional_host_permissions": [
+    "http://*/*",
+    "https://*/*",
+    "https://returnyoutubedislikeapi.com/*"
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  },
+  "commands": {
+    "toggle-nebula": {
+      "suggested_key": {
+        "default": "Alt+Shift+N"
+      },
+      "description": "Turn NEBULA on or off"
+    },
+    "toggle-focus": {
+      "suggested_key": {
+        "default": "Alt+Shift+F"
+      },
+      "description": "Turn Focus Mode on or off"
+    },
+    "pick-element": {
+      "suggested_key": {
+        "default": "Alt+Shift+P"
+      },
+      "description": "Pick an element to hide on this page"
+    }
+  }
+}

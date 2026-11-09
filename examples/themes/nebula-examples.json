@@ -1,0 +1,122 @@
+{
+  "format": "nebula-theme",
+  "formatVersion": 1,
+  "exportedAt": "2026-11-07T00:00:00.000Z",
+  "themes": [
+    {
+      "id": "example_red_glass",
+      "name": "Red Glass",
+      "builtin": false,
+      "appearance": {
+        "bgColor": "#0a0a0b",
+        "textColor": "#f2f2f3",
+        "accent": "#d71921"
+      },
+      "glass": {
+        "enabled": true,
+        "tint": "dark",
+        "blur": 22,
+        "transparency": 65,
+        "saturation": 150,
+        "borderOpacity": 20,
+        "brightness": 100,
+        "shadow": 40
+      },
+      "typography": {
+        "fontFamily": null,
+        "headingFamily": "system-ui, sans-serif",
+        "fontSize": null,
+        "fontWeight": null,
+        "headingWeight": 700,
+        "lineHeight": null,
+        "letterSpacing": null,
+        "linkColor": "#ff4d55"
+      },
+      "wallpaper": {
+        "assetId": null,
+        "position": "center",
+        "size": "cover",
+        "opacity": 100,
+        "blur": 0,
+        "dim": 30
+      }
+    },
+    {
+      "id": "example_paper",
+      "name": "Paper Light",
+      "builtin": false,
+      "appearance": {
+        "bgColor": "#f7f5f0",
+        "textColor": "#222222",
+        "accent": "#b3261e"
+      },
+      "glass": {
+        "enabled": false,
+        "tint": "light",
+        "blur": 16,
+        "transparency": 25,
+        "saturation": 130,
+        "borderOpacity": 10,
+        "brightness": 100,
+        "shadow": 12
+      },
+      "typography": {
+        "fontFamily": "Georgia, serif",
+        "headingFamily": null,
+        "fontSize": 108,
+        "fontWeight": null,
+        "headingWeight": null,
+        "lineHeight": 1.7,
+        "letterSpacing": 0.2,
+        "linkColor": null
+      },
+      "wallpaper": {
+        "assetId": null,
+        "position": "center",
+        "size": "cover",
+        "opacity": 100,
+        "blur": 0,
+        "dim": 30
+      }
+    },
+    {
+      "id": "example_ocean",
+      "name": "Ocean Night",
+      "builtin": false,
+      "appearance": {
+        "bgColor": "#061320",
+        "textColor": "#d6ecff",
+        "accent": "#35b6ff"
+      },
+      "glass": {
+        "enabled": true,
+        "tint": "dark",
+        "blur": 14,
+        "transparency": 55,
+        "saturation": 120,
+        "borderOpacity": 16,
+        "brightness": 100,
+        "shadow": 30
+      },
+      "typography": {
+        "fontFamily": null,
+        "headingFamily": null,
+        "fontSize": null,
+        "fontWeight": null,
+        "headingWeight": null,
+        "lineHeight": 1.6,
+        "letterSpacing": null,
+        "linkColor": "#7fd0ff"
+      },
+      "wallpaper": {
+        "assetId": null,
+        "position": "center",
+        "size": "cover",
+        "opacity": 100,
+        "blur": 0,
+        "dim": 30
+      }
+    }
+  ],
+  "assets": {}
+}

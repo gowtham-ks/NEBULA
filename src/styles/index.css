@@ -1,0 +1,41 @@
+@import '@fontsource/space-grotesk/500.css';
+@import '@fontsource/space-grotesk/700.css';
+@import '@fontsource/inter/400.css';
+@import '@fontsource/inter/500.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-void font-sans text-neutral-200 antialiased;
+    background-image:
+      radial-gradient(900px 420px at 100% -10%, rgba(215, 25, 33, 0.1), transparent),
+      radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: auto, 14px 14px; /* dot-matrix texture */
+    background-attachment: fixed, scroll;
+  }
+  h1, h2, h3 { @apply font-display; }
+}
+
+@layer components {
+  .glass {
+    @apply rounded-card border border-white/10 bg-white/[0.04];
+    backdrop-filter: blur(14px) saturate(120%);
+  }
+  .label-dot { @apply font-display text-[11px] uppercase tracking-[0.18em] text-neutral-500; }
+}
+
+@layer components {
+  .btn { @apply inline-flex items-center justify-center gap-2 rounded-card border border-white/15 px-3 py-1.5 text-sm transition-colors hover:bg-white/10 disabled:opacity-40; }
+  .btn-primary { @apply border-nothing bg-nothing text-white hover:bg-nothing/90; }
+  .input { @apply rounded-card border border-white/15 bg-graphite px-2 py-1.5 text-sm; }
+}
+
+:focus-visible { outline: 2px solid #d71921; outline-offset: 2px; }
+::selection { background: rgba(215, 25, 33, 0.5); }
+* { scrollbar-width: thin; scrollbar-color: rgba(255, 255, 255, 0.2) transparent; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}

@@ -1,0 +1,7 @@
+/* Example per-site CSS: a narrower, calmer reading column. Paste into Custom CSS for a site. */
+article, main {
+  max-width: 720px;
+  margin-inline: auto;
+}
+img, video { border-radius: 6px; }
+a:hover { text-decoration: underline; }
